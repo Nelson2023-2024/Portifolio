@@ -1,0 +1,30 @@
+/* ******************NAVBAR************************ */
+
+nav{
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    background: #eee;
+}
+.brand a{
+    font-size: 2rem;
+}
+
+nav .links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .links a{
+    font-size: 18px;
+    color: #000;
+
+}
+nav .links .active{
+   background: orange;
+   padding: 10px 20px;
+   border-radius: 10px;
+    
+}

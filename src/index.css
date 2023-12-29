@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
