@@ -1,7 +1,10 @@
+import Proj from "../../Components/Proj"
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <>
+    <Proj/>
+    </>
   )
 }
 
