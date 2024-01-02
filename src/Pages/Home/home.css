@@ -301,3 +301,17 @@ nav .links .active{
         font-size: 12px; 
     }
 }
+
+/* *********************FOOTER********************* */
+.footer__section{
+    margin-top: 4rem;
+    text-align: center;
+    background: rgb(7, 7, 7);
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer__section .container span{
+    color: red;
+    font-size: 20px;
+}
