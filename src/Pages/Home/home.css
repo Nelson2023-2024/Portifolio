@@ -2,19 +2,25 @@
 
 nav{
     display: flex;
-    height: 70px;
-    justify-content: space-around;
     align-items: center;
-    background: #eee;
+    height: 70px;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .brand a{
     font-size: 2rem;
+    margin-left: 2rem;
 }
 
 nav .links{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    margin-right: 3rem;
+
 }
 
 nav .links a{
@@ -27,4 +33,150 @@ nav .links .active{
    padding: 10px 20px;
    border-radius: 10px;
     
+}
+
+/* ******************HERO************************ */
+.hero{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.hero .container{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding-inline: 10px;
+    text-align: center;
+}
+.hero .container h1{
+    background: linear-gradient(blue, purple);
+    background-clip: text;
+    color: transparent;
+}
+.hero .container h5{
+    background-color: rgb(189, 154, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 300px;
+    margin: auto;
+    border-radius: 30px;
+    margin-block: 10px;
+}
+.hero .container h5  span{
+    color: red;
+    font-size: 20px;
+    
+}
+.hero .container h3{
+    color: orange;
+    margin-block: 10px;
+}
+.hero .container p{
+    line-height: 1.4;
+    text-wrap: balance;
+    color: rgb(104, 103, 103);
+}
+.hero__buttons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.hero__buttons button:first-child{
+    background: orange;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .3s ease-in;
+}
+.hero__buttons button:first-child:hover{
+    transform: scale(1.1);
+}
+.hero__buttons button:nth-child(2){
+    border: 2px solid orange;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: .3s ease-in;
+    border-radius: 10px;
+
+}
+.hero__buttons button:nth-child(2):hover{
+    transform: scale(1.1);
+
+}
+.hero__social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    right: 70px;
+    top: 180px;
+}
+.hero__social-links svg{
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .3s ease-in-out;
+}
+.hero__social-links svg:first-child:hover{
+    color: green;
+}
+.hero__social-links svg:nth-child(2):hover{
+    color: royalblue;
+}
+.hero__social-links svg:last-child:hover{
+    color: brown;
+}
+
+.tech__stack{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.tech__stack svg{
+    font-size: 30px;
+}
+
+.tech__stack svg:nth-child(2) {
+  color: #E34F26; 
+}
+
+.tech__stack svg:nth-child(3) {
+  color: #2965f1; 
+}
+
+.tech__stack svg:nth-child(4) {
+  color: #f0db4f; 
+}
+
+.tech__stack svg:nth-child(5) {
+  color: #563d7c; 
+}
+
+.tech__stack svg:nth-child(6) {
+  color: #38b2ac;
+}
+
+
+.tech__stack svg:nth-child(7) {
+  color: #61dbfb; 
+}
+
+
+@media (max-width:768px){
+    .hero__social-links{
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    top: 0;
+    left: 10px;
+    margin-top: 1rem;
+}
 }
