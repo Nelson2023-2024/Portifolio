@@ -3,7 +3,7 @@ import Slider from "react-slick"
 
 //slider configuration
 const sliderSettings ={
-  dots:false,
+  dots:true,
   arrows:false,
   loop:true,
   infinite:true,
@@ -14,7 +14,6 @@ const sliderSettings ={
   mobileFirst:true,
   autoplaySpeed:3000,
   pauseOnHover:true,
-
 }
   
 

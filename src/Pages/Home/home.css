@@ -262,6 +262,7 @@ nav .links .active{
     padding-inline: 20px;
     border-radius: 10px;
     text-align: center; 
+    cursor: grab;
 }
 
 .testimonial__section .card img {
