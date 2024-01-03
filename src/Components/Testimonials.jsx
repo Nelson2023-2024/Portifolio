@@ -24,13 +24,13 @@ const people = [
     id: 1,
     img: "https://tse2.mm.bing.net/th?id=OIP.Ck2Usj84bIh_SiI2QJ7b-QHaEp&pid=Api&P=0&h=220",
     comment: "Exemplary dedication to front-end development! It's a delight working with you on every project.",
-    name: "Adam, Client & Partner"
+    name: "Lecturer Daniel Gitau"
   },
   {
     id: 2,
     img: "https://tse3.mm.bing.net/th?id=OIP.7VThHu2VS76jFvN5_5gnlgHaEW&pid=Api&P=0&h=220",
     comment: "Your work demonstrates remarkable creativity and attention to detail. Impressive skills in building responsive websites!",
-    name: "Bella, Colleague & Designer"
+    name: "Bella, & Designer"
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ const people = [
     id: 6,
     img: "https://tse1.mm.bing.net/th?id=OIP.AwGBn0RaiFXEpXemdj-2LQHaLG&pid=Api&P=0&h=220",
     comment: "Your commitment to creating outstanding web applications is evident in every project. You're a valuable asset to any team!",
-    name: "Fiona, Supporter & Collaborator"
+    name: "Lewis, Supporter & Collaborator"
   },
 ];
 
