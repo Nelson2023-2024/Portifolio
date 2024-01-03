@@ -1,6 +1,12 @@
+//hooks
+import { useState } from 'react';
+
 import { Link, NavLink } from 'react-router-dom'
 
 import '../Pages/Home/home.css'
+
+//icons
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 
 function Navbar() {
@@ -40,7 +46,6 @@ function Navbar() {
         path: "/contact",
     }
   ]
-  
     const handleClick = (idjs) => {
     const element = document.querySelector(idjs);
     if (element) {
@@ -50,6 +55,15 @@ function Navbar() {
       });
     }
   };
+  
+  //useState
+  const [showLinks, setShowLinks] = useState(false)
+
+  
+  const toggleLinks = () => {
+    setShowLinks(prevshow => !prevshow)
+  }
+ 
   return (
     <>
     <nav>
@@ -57,10 +71,20 @@ function Navbar() {
         <div className="brand">
             <Link to='/' > Nelson</Link>
         </div>
-        <div className="links">
+        {/* buggermenu for responsive design */}
+        <button className="burger-menu" onClick={toggleLinks}>
+          {
+            showLinks ? <FaTimes/>:<FaBars/>
+          }
+        </button>
+        <div className={`links ${showLinks ? 'show' : ''}`}>
            {
             navLists.map(({id, title, path, idjs})=>(
-                <NavLink href={idjs} key={id} to={path} onClick={() => handleClick(idjs)}> {title}</NavLink>
+                <NavLink href={idjs} key={id} to={path} onClick={() => {
+                  handleClick(idjs);
+                  setShowLinks(false)
+                
+                }}> {title}</NavLink>
             ))
            }
         </div>

@@ -30,21 +30,75 @@ nav .links{
     align-items: center;
     gap: 1.5rem;
     margin-right: 3rem;
-
 }
 
 nav .links a{
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
+    transition: .3s color ease-in-out;
+
+}
+nav .links a:hover{
+   color: rgb(253, 178, 39);
 
 }
 nav .links .active{
    background: rgb(253, 178, 39);
    padding: 10px 20px;
-   border-radius: 10px;
-    
+   border-radius: 10px;   
+}
+nav .links .active:hover{
+  color: #fff;   
 }
 
+nav .burger-menu{
+    display: none;
+}
+
+
+@media (max-width:768px){
+    nav .links{
+    display: none;
+
+    }
+    nav button{
+        border: none;
+        cursor: pointer;
+    }
+    nav .burger-menu{
+        display: block;
+        font-size: 1.7rem;
+        margin-right: 20px;
+        background: transparent;
+        color: #333;
+    }
+
+    nav .links.show{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #eee;
+        box-shadow: 5px 5px 30px black;
+        padding-block: 1rem;
+    }
+    nav .links.show a {
+        color: #333;
+        padding: 1rem;
+        text-align: center;
+     }
+     nav .links.show a:hover {
+        color:rgb(228, 15, 15) ;
+        padding: 1rem;
+        text-align: center;
+     }
+    
+
+
+
+}
 /* ******************HERO************************ */
 .hero{
     height: 100vh;
