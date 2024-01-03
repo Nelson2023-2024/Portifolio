@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     border-radius: border-box;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a{
@@ -10,6 +10,7 @@ a{
 }
 h1{
     font-size: 2rem;
+    font-family: 'Titan One', sans-serif;
 }
 h2{
     font-size: 1.5rem;

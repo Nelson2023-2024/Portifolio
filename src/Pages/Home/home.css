@@ -30,7 +30,7 @@ nav .links a{
 
 }
 nav .links .active{
-   background: orange;
+   background: rgb(253, 178, 39);
    padding: 10px 20px;
    border-radius: 10px;
     
@@ -119,21 +119,28 @@ nav .links .active{
     right: 70px;
     top: 180px;
 }
-.hero__social-links svg{
+.hero__social-links a svg{
     cursor: pointer;
     font-size: 2rem;
     transition: .3s ease-in-out;
+    color: black;
     filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.3));
 
 }
-.hero__social-links svg:first-child:hover{
-    color: green;
+.hero__social-links a:nth-of-type(1):hover svg {
+  color: green;
 }
-.hero__social-links svg:nth-child(2):hover{
-    color: royalblue;
+
+.hero__social-links a:nth-of-type(2):hover svg {
+  color: royalblue;
 }
-.hero__social-links svg:last-child:hover{
-    color: brown;
+
+.hero__social-links a:nth-of-type(3):hover svg {
+  color: rgb(151, 103, 170);
+}
+
+.hero__social-links a:nth-of-type(4):hover svg {
+  color:brown;
 }
 
 .tech__stack{

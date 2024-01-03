@@ -26,14 +26,18 @@ function Hero() {
           <h3>Frontend Developer</h3>
           <p>Hello I'm Nelson Ouya 19 years old passionate frontend developer based in Nairobi, Kenya.</p>
         <div className="hero__buttons">
-          <button>Contact me</button>
-          <button>Download CV</button>
+          <a href=""><button>Download CV</button></a>
+          <button >Contact me</button>
         </div>
         <div className="hero__social-links">
-          <MdWhatsapp />
-          <FaLinkedin />
-          <FaXTwitter />
-          <FaGithub />
+          <a href=""><MdWhatsapp /></a>
+          <a href=""><FaLinkedin /></a>
+          <a href=""><FaXTwitter /></a>
+          <a href=""><FaGithub /></a>
+          
+          
+          
+          
 
         </div>
         <div className="tech__stack">
