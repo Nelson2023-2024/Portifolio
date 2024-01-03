@@ -63,11 +63,11 @@ function Testimonials() {
     <>
     <section className='testimonial__section' id="testimonials"> 
       <div className="container">
-        <h1>Testimonials</h1>
-        <Slider {...sliderSettings}>
+        <h1 data-aos="fade-up">Testimonials</h1>
+        <Slider {...sliderSettings} >
           {
             people.map(({id, img, comment, name}) => (
-              <div className="card" key={id}>
+              <div className="card" key={id} data-aos="fade-left" >
                 <img src={img} alt="testimonial-img" />
                 <p className="text">{comment}</p>
                 <p className="name">{name}</p>

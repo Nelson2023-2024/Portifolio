@@ -1,3 +1,5 @@
+//hools
+import { useEffect } from 'react'
 
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
@@ -9,8 +11,19 @@ import About from './Components/About'
 import Testimonials from './Components/Testimonials'
 import Layout from './Components/Layout/Layout'
 
-function App() {
 
+//AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+function App() {
+    useEffect(()=> {
+        AOS.init({
+            offset:200,
+            duration:800,
+            easing:"ease-in-sine",
+            delay:100,
+        });
+    }, [])
 
     return (
         <Router>

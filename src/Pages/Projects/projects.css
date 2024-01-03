@@ -23,6 +23,13 @@
     height: 350px;
     padding: 1.1rem;
     border: 1px solid;
+    box-shadow: 5px 5px 10px  black;
+    transition: .5s ease-in-out;
+    
+}
+.project__section .container .projects__card:hover{
+  transform: scale(1.04);
+    
 }
 .project__section .container h2{
     margin-block: 10px;

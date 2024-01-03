@@ -7,6 +7,8 @@ import { IoLogoWhatsapp } from 'react-icons/io5';
 import { FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { FaPhone } from 'react-icons/fa';
+import { FaGithub } from "react-icons/fa";
+
 
 // Define the ContactForm component
 function ContactForm() {
@@ -35,7 +37,7 @@ function ContactForm() {
       <section className="contact__section" id="contact">
         <div className="container">
           {/* Social icons */}
-          <div className="social__links">
+          <div className="social__links" data-aos="fade-right">
             <h4>Lets talk about everything!</h4>
             <h6>Dont like forms? Click any of the links below </h6>
             <div className="card__link">
@@ -63,14 +65,18 @@ function ContactForm() {
                 <span>LinkedIn</span>
               </a>
             </div>
+            <div className="card__link">
+              <a href="https://github.com/Nelson2023-2024" rel="noopener noreferrer"><FaGithub /> <span>GitHub</span></a>
+            </div>
           </div>
           {/* Contact form */}
-          <form ref={form} onSubmit={sendEmail} className="contact__form">
+          <form ref={form} onSubmit={sendEmail} className="contact__form" data-aos="fade-left">
             <h1>Get In Touch</h1>
             <div className="form-control-1">
               <input type="text" placeholder="Firstname" name='user_name' minLength={2} required />
               <input type="text" placeholder="Lastname" name='user_name' minLength={2} required />
             </div>
+
             <div className="form-control-2">
               <input
                 type="email"

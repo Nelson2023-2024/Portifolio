@@ -55,13 +55,13 @@ function Proj() {
   return (
     <>
     <section className="project__section">
-        <h1>Projects</h1>
+        <h1 data-aos="fade-up">Projects</h1>
         <div className="container">
             {
                 projects.map(({id, img, name, tech, live, githublink}) => (
-                    <div className='projects__card' key={id}>
+                    <div className='projects__card' key={id} >
                          <h2>{name}</h2>
-                        <img loading='lazt' src={img} alt="" />
+                        <img loading='lazy' src={img} alt="" />
                         <h4>{tech}</h4>
                         <div className="projects__buttons">
                             <a href={live} target="_blank" rel="noopener noreferrer">Live Demo

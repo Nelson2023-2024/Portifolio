@@ -3,7 +3,7 @@ import '../Pages/Contact/contact.css'
 function PrimaryLanding() {
   return (
     <>
-        <section className="contact-main">
+        <section className="contact-main" data-aos="fade-up">
         <div className="contact-main-text">
             <h1>Contact Me </h1>
 
