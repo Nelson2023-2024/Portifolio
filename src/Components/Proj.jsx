@@ -20,7 +20,7 @@ const projects = [
         img:"https://drive.google.com/uc?id=1sFASzGhXDB_rsfzZyqavywHkDUPpmGZ7",
         name:"Bugger Website",
         tech:"REACT + TAILWIND ",
-        live:"https://gym254.netlify.app/#services",
+        live:"https://bugger254.netlify.app/",
         githublink:"https://github.com/Nelson2023-2024/React-GYM"
     },
     {
