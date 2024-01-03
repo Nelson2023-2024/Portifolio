@@ -15,13 +15,13 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, 1fr);
-    color: #fff;
+    color: black;
 }
 .project__section .container .projects__card{
-    background-color: #996c6c;
     border-radius: 10px;
     height: 350px;
-    padding: 1rem;
+    padding: 1.1rem;
+    border: 1px solid;
 }
 .project__section .container h2{
     margin-block: 10px;
@@ -29,7 +29,10 @@
     background-clip: text;
     color: transparent;
 }
-
+.project__section .container h4{
+    color: orange;
+    margin-top: 10px;
+}
 .project__section .container img{
     width: 100%;
     border-radius: 10px;
@@ -42,14 +45,14 @@
     margin-top: 20px;
 }
 .projects__buttons a{
-    background-color: rgb(68, 105, 218);
+    border: 1px solid black;
     padding: 10px 15px;
     display: flex;
     align-items: center;
     gap: 5px;
-    border-radius: 10px;
+    border-radius: 4rem;
     transition: .5s ease;
-    color: #fff;
+    color: black;
 }
 .projects__buttons a:hover{
  transform: scale(1.1);
@@ -69,7 +72,7 @@
 }
 @media (max-width:768px){
     .project__section .container {
-    grid-template-columns: repeat(1, 500px);
+    grid-template-columns: repeat(1, 450px);
     justify-content: center;
 }
    .project__section .container img{
@@ -78,9 +81,15 @@
 }
 }
 
-@media (max-width:400px){
+@media (max-width:530px){
     .project__section .container {
     grid-template-columns: repeat(1, 350px);
+}
+  
+}
+@media (max-width:375px){
+    .project__section .container {
+    grid-template-columns: repeat(1, 320px);
 }
   
 }
