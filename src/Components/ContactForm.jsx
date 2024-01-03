@@ -32,12 +32,12 @@ function ContactForm() {
 
   return (
     <>
-      <section className="contact__section">
+      <section className="contact__section" id="contact">
         <div className="container">
           {/* Social icons */}
           <div className="social__links">
             <h4>Lets talk about everything!</h4>
-            <h6>Dont like forms? Send me an email </h6>
+            <h6>Dont like forms? Click any of the links below </h6>
             <div className="card__link">
               <a href="mailto:nelsonobuya19@gmail.com" target="_blank" rel="noopener noreferrer">
                 <MdEmail /> <span>Email</span>

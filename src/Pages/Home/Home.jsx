@@ -6,9 +6,9 @@ import Testimonials from "../../Components/Testimonials"
 function Home() {
   return (
     <>
-        <Hero/>
-        <About/>
-        <Testimonials/>
+        <Hero id='hero'/>
+        <About id='about'/>
+        <Testimonials  id='testimonials'/>
         <Footer/>
 
     </>

@@ -12,6 +12,8 @@ import { IoLogoJavascript } from "react-icons/io";
 import { FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
+import { MdEmail } from 'react-icons/md';
+
 
 
 
@@ -19,7 +21,7 @@ function Hero() {
   return (
     <>
     
-    <section className='hero'>
+    <section className='hero' id='hero'>
       <div className="container">
           <h5> <span>&hearts;</span>Welcome to my portfolio</h5>
           <h1>Hello, Im Nelson</h1>
@@ -30,10 +32,12 @@ function Hero() {
           <button >Contact me</button>
         </div>
         <div className="hero__social-links">
-          <a href=""><MdWhatsapp /></a>
-          <a href=""><FaLinkedin /></a>
-          <a href=""><FaXTwitter /></a>
-          <a href=""><FaGithub /></a>
+         <a href="https://wa.me/254115720771" target="_blank" rel="noopener noreferrer"><MdWhatsapp /></a>
+          <a href="https://www.linkedin.com/in/nelson-obuya-841251273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+          <a href="mailto:nelsonobuya19@gmail.com" target="_blank" rel="noopener noreferrer">
+                <MdEmail /> 
+              </a>
+          <a href="https://github.com/" rel="noopener noreferrer"><FaGithub /></a>
           
           
           

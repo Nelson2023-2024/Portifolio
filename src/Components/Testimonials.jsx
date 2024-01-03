@@ -61,7 +61,7 @@ const people = [
 function Testimonials() {
   return (
     <>
-    <section className='testimonial__section'> 
+    <section className='testimonial__section' id="testimonials"> 
       <div className="container">
         <h1>Testimonials</h1>
         <Slider {...sliderSettings}>

@@ -10,17 +10,24 @@ function Navbar() {
     {
         id:1,
         title:"Home",
-        path: "/"
+        path: "/",
+        idjs:"#hero"
+
+
     },
     {
         id:2,
         title:"About me",
-        path: "/about"
+        path: "/about",
+        idjs:"#about"
+
     },
     {
         id:4,
         title:"Testimonials",
-        path: "/testimonials"
+        path: "/testimonials",
+        idjs:"#testimonials"
+
     },
     {
         id:5,
@@ -30,9 +37,19 @@ function Navbar() {
     {
         id:6,
         title:"Contact me",
-        path: "/contact"
+        path: "/contact",
     }
   ]
+  
+    const handleClick = (idjs) => {
+    const element = document.querySelector(idjs);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
   return (
     <>
     <nav>
@@ -42,8 +59,8 @@ function Navbar() {
         </div>
         <div className="links">
            {
-            navLists.map(({id, title, path})=>(
-                <NavLink key={id} to={path}> {title}</NavLink>
+            navLists.map(({id, title, path, idjs})=>(
+                <NavLink href={idjs} key={id} to={path} onClick={() => handleClick(idjs)}> {title}</NavLink>
             ))
            }
         </div>
