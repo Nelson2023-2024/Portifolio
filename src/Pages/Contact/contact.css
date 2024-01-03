@@ -1,0 +1,154 @@
+.contact-main{
+    min-height: 100vh;
+}
+.contact-main-text{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   min-width: 75%;
+   text-align: center;
+   text-wrap: balance;
+}
+.contact-main-text h1{
+    text-align: center;
+    background: linear-gradient(blue, purple);
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+}
+.contact-main-text p{
+    font-size: 16px;
+    color: rgb(104, 103, 103);
+    margin-top: 15px;
+    margin-bottom: 31px;
+
+}
+.contact-main-text a{
+    color: rgb(104, 103, 103);
+    border: 1px solid orange;
+    padding: 10px 20px;
+    position: relative;
+
+}
+.contact-main-text a:before{
+    content:'';
+    background: orange;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: scalex(0);
+    z-index: -1;
+    transition: .4s ease-in-out;
+
+}
+.contact-main-text a:hover::before{
+    transform: scaleX(1);
+}
+.contact__section{
+    padding-inline: 20px;
+
+}
+.contact__section .container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact__form h1{
+    text-align: center;
+    background: linear-gradient(blue, purple);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+.contact__section .container .contact__form .form-control-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+.contact__section .container .contact__form  input{
+    width: 100%;
+    padding: .8rem 1rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+
+.contact__section .container .contact__form .form-control-2 input{
+   width: 468px;
+
+}
+.contact__section .container .contact__form textarea{
+  width: 465px;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  padding: .8rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 15px;
+
+}
+.contact__section .container .contact__form .btn{
+    background-color: royalblue;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    transition: .3s ease-in-out;
+}
+.contact__section .container .contact__form .btn:hover{
+    transform: scale(1.05);
+}
+.contact__section .container .social__links{
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+}
+.contact__section .container .social__links h4{
+    background: linear-gradient(blue, purple);
+    background-clip: text;
+    color: transparent;
+}
+.contact__section .container .social__links h6{
+    color: orange;
+}
+
+.contact__section .container .social__links .card__link{
+    width: 400px;
+    max-width: 250px;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    transition: .3s;
+
+}
+
+.card__link:hover {
+  color: red; 
+}
+
+
+.contact__section .container .social__links .card__link a{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    transition: .5s ease-in-out;
+
+}
+
+
+@media (max-width:768px){
+    .contact__section .container .social__links{
+    order: 2;
+}
+}

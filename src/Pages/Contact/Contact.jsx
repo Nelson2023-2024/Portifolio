@@ -1,7 +1,15 @@
 
+import ContactForm from '../../Components/ContactForm'
+import PrimaryLanding from '../../Components/PrimaryLanding'
+import Footer from '../../Components/Footer'
+import './contact.css'
 function Contact() {
   return (
-    <div>Contact</div>
+    <>
+    <PrimaryLanding/>
+    <ContactForm/>
+    <Footer/>
+    </>
   )
 }
 

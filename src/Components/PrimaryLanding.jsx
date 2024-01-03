@@ -1,18 +1,17 @@
+import '../Pages/Contact/contact.css'
 
 function PrimaryLanding() {
   return (
     <>
         <section className="contact-main">
         <div className="contact-main-text">
-            <h1>Our teams are ready to help </h1>
+            <h1>Contact Me </h1>
 
             <p>
-                    width: 1200px;
-Thank you for your interest in our website! If you have any questions, comments, or concerns, please
-                dont hesitate to contact me using the form below. We'll do I best to respond to your message as soon as
-                possible.
+                I&apos;m delighted to hear from you! If you have any queries, suggestions, or simply want to get in touch, please use the form below. Your message is important to me, and I&apos;ll do my best to respond promptly.
             </p>
-            <a href="#contact">View Projects</a>
+            <p>Phone: +254 115 720 771</p>
+            <a href="#contact">Contact me </a>
         </div>
         </section>
     </>
