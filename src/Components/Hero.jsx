@@ -19,7 +19,21 @@ import { MdEmail } from 'react-icons/md';
 
 import { Link } from 'react-router-dom';
 
+//pdf
+const PDF_FILE_URL = "http://localhost:5174/Nelson_Ouya_CV.pdf"
+
 function Hero() {
+
+  const downloadFileAtURL =(url) =>{
+    const fileName = url.split("/").pop()
+    const aTag = document.createElement('a')
+    aTag.href=url
+    aTag.setAttribute('download', fileName)
+    document.body.appendChild(aTag)
+    aTag.click()
+    aTag.remove()
+
+  }
   return (
     <>
     
@@ -30,7 +44,7 @@ function Hero() {
           <h3 data-aos="fade-down">Frontend Developer</h3>
           <p data-aos="fade-down">Hello I'm Nelson Ouya 19 years old passionate frontend developer based in Nairobi, Kenya.</p>
         <div className="hero__buttons">
-          <a href="" data-aos="fade-right">Download CV <span><MdDownload /></span></a>
+          <a onClick={() =>{downloadFileAtURL(PDF_FILE_URL)} } data-aos="fade-right">Download CV <span><MdDownload /></span></a>
          <Link to={'/contact'} data-aos="fade-left">Contact me</Link>
           
         </div>
