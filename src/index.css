@@ -1,8 +1,10 @@
-*{
+
+  /* OSWALD */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;500;600;700&family=Titan+One&display=swap');*{
     margin: 0;
     padding: 0;
     border-radius: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -15,6 +17,8 @@ h1{
 }
 h2{
     font-size: 1.5rem;
+    font-family: 'Titan One', sans-serif;
+
 }
 .container{
     max-width: 1200px;
