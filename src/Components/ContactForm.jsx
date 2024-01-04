@@ -71,13 +71,13 @@ function ContactForm() {
           </div>
           {/* Contact form */}
           <form ref={form} onSubmit={sendEmail} className="contact__form" data-aos="fade-down">
-            <h1>Get In Touch</h1>
-            <div className="form-control-1">
+            <h1 data-aos="fade-up">Get In Touch</h1>
+            <div className="form-control">
               <input type="text" placeholder="Firstname" name='user_name' minLength={2} required />
               <input type="text" placeholder="Lastname" name='user_name' minLength={2} required />
             </div>
 
-            <div className="form-control-2">
+            <div className="form-control">
               <input
                 type="email"
                 name='user_email'

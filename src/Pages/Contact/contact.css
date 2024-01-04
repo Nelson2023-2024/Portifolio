@@ -59,6 +59,10 @@
     align-items: center;
     justify-content: space-around;
 }
+.contact__form {
+    width: 100%;
+    max-width: 500px;
+}
 .contact__form h1{
     text-align: center;
     background: linear-gradient(blue, purple);
@@ -66,36 +70,42 @@
     color: transparent;
     margin-bottom: 1rem;
 }
-.contact__section .container .contact__form .form-control-1{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-
-}
-.contact__section .container .contact__form  input{
+.contact__form .form-control{
     width: 100%;
-    padding: .8rem 1rem;
-    border-radius: 5rem;
+    max-width: 100%;
+}
+
+/* Flex display for the first form-control */
+.contact__form .form-control {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact__form .form-control input{
+    width: 100%;
+    padding: .8rem .4rem;
+    border-radius: 10px;
     border: none;
     outline: none;
-    margin-bottom: 1rem;
-    font-size: 15px;
 }
-
-.contact__section .container .contact__form .form-control-2 input{
-   width: 468px;
-
-}
-.contact__section .container .contact__form textarea{
-  width: 465px;
-  border: none;
+.contact__form .form-control input:focus {
   outline: none;
-  border-radius: 1rem;
-  padding: .8rem 1rem;
-  margin-bottom: 1rem;
-  font-size: 15px;
-
+  box-shadow: 0 0 10px royalblue; /* Adjust the color and intensity as needed */
 }
+
+.contact__form .form-control textarea{
+    width: 100%;
+    padding: .8rem .4rem;
+    border-radius: 10px;
+    border: none;
+}
+.contact__form .form-control textarea:focus{
+    outline: none;
+    box-shadow: 0 0 10px royalblue;
+}
+
 .contact__section .container .contact__form .btn{
     background-color: royalblue;
     padding: 1rem;
@@ -103,6 +113,7 @@
     border: none;
     border-radius: 2rem;
     transition: .3s ease-in-out;
+    font-family: 'Titan One', sans-serif;
 }
 .contact__section .container .contact__form .btn:hover{
     transform: scale(1.05);
