@@ -80,8 +80,9 @@ nav .burger-menu{
         flex-direction: column;
         position: absolute;
         top: 70px;
-        left: 0;
+        left: 35px;
         width: 100%;
+        max-width: 90%;
         background: #eee;
         box-shadow: 5px 5px 30px black;
         padding-block: 1rem;
@@ -96,6 +97,26 @@ nav .burger-menu{
         padding: 1rem;
         text-align: center;
      }
+
+@media (max-width:640px){
+    nav .links.show{
+        left: 25px;
+    }
+}
+    
+@media (max-width:496px){
+    nav .links.show{
+        left: 20px;
+    }
+
+}
+
+@media (max-width:414px){
+    nav .links.show{
+    left: 15px;
+    }
+
+}
     
 
 
@@ -223,6 +244,7 @@ nav .burger-menu{
 .tech__stack{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 2rem;
     gap: 1rem;
@@ -268,6 +290,9 @@ nav .burger-menu{
     left: 10px;
     margin-top: 1rem;
 }
+    .tech__stack h2{
+        font-size: 20px;
+    }
     .tech__stack svg{
         font-size: 30px;
     }

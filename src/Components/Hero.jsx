@@ -47,9 +47,9 @@ function Hero() {
           
 
         </div>
-        <div className="tech__stack" data-aos="fade-up" >
+        <div className="tech__stack"  >
 
-          <p>Techstack |</p>
+          <h2>Techstack |</h2>
           <FaHtml5 />
           <DiCss3 />
           <IoLogoJavascript />
