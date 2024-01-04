@@ -12,7 +12,7 @@ const projects = [
         img:"https://drive.google.com/uc?id=1cEzgmM4XnVa2Aejaaf-xhEf2VXEz9-rl",
         name:"GYM Website",
         tech:"REACT + CSS ",
-        live:"https://gym245.netlify.app",
+        live:"https://gym254.netlify.app/",
         githublink:"https://github.com/Nelson2023-2024/React-GYM"
     },
       {
