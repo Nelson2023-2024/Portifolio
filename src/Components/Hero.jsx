@@ -20,7 +20,7 @@ import { MdEmail } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 //pdf
-const PDF_FILE_URL = "http://localhost:5174/Nelson_Ouya_CV.pdf"
+const PDF_FILE_URL = "/Nelson_Ouya_CV.pdf"
 
 function Hero() {
 
