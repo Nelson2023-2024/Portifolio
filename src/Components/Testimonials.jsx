@@ -67,7 +67,7 @@ function Testimonials() {
         <Slider {...sliderSettings} >
           {
             people.map(({id, img, comment, name}) => (
-              <div className="card" key={id} data-aos="fade-left" >
+              <div className="card" key={id} data-aos="fade-down" >
                 <img src={img} alt="testimonial-img" />
                 <p className="text">{comment}</p>
                 <p className="name">{name}</p>

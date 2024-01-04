@@ -37,7 +37,7 @@ function ContactForm() {
       <section className="contact__section" id="contact">
         <div className="container">
           {/* Social icons */}
-          <div className="social__links" data-aos="fade-right">
+          <div className="social__links" data-aos="fade-up">
             <h4>Lets talk about everything!</h4>
             <h6>Dont like forms? Click any of the links below </h6>
             <div className="card__link">
@@ -70,7 +70,7 @@ function ContactForm() {
             </div>
           </div>
           {/* Contact form */}
-          <form ref={form} onSubmit={sendEmail} className="contact__form" data-aos="fade-left">
+          <form ref={form} onSubmit={sendEmail} className="contact__form" data-aos="fade-down">
             <h1>Get In Touch</h1>
             <div className="form-control-1">
               <input type="text" placeholder="Firstname" name='user_name' minLength={2} required />
