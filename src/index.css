@@ -26,6 +26,7 @@
     border-radius: border-box;
 font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
     transition:  .5s background;
 }
 
