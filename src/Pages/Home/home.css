@@ -7,10 +7,11 @@ nav{
     width: 100%;
     z-index: 1000;
     display: flex;
+    background: var(--body_background);
     align-items: center;
-    background-color: #eee;
     height: 70px;
     box-shadow: 5px 5px 30px black;
+    
    
     
 }
@@ -36,8 +37,9 @@ nav .links{
 
 nav .links a{
     font-size: 16px;
-    color: #000;
+    color: var(--navatag-color);
     transition: .3s color ease-in-out;
+    
 
 }
 nav .links a:hover{
@@ -72,7 +74,8 @@ nav .burger-menu{
         font-size: 1.7rem;
         margin-right: 20px;
         background: transparent;
-        color: #333;
+        color: var(--color);
+        order: 3;
     }
 
     nav .links.show{
@@ -83,12 +86,13 @@ nav .burger-menu{
         left: 35px;
         width: 100%;
         max-width: 90%;
-        background: #eee;
+        background:var( --body_background);
         box-shadow: 5px 5px 30px black;
         padding-block: 1rem;
+        color: var();
     }
     nav .links.show a {
-        color: #333;
+        color:var(--ptag-color);
         padding: 1rem;
         text-align: center;
      }
@@ -144,6 +148,12 @@ nav .burger-menu{
     background-clip: text;
     color: transparent;
 }
+/* dark theme */
+[data-theme='dark'] .hero .container h1 {
+  background: var(--h1-dark-color); 
+  background-clip: text;
+  color: transparent;
+}
 .hero .container h5{
     background-color: rgb(189, 154, 223);
     display: flex;
@@ -167,7 +177,7 @@ nav .burger-menu{
 .hero .container p{
     line-height: 1.4;
     text-wrap: balance;
-    color: rgb(104, 103, 103);
+    color: var(--ptag-color);
 }
 .hero__buttons{
     display: flex;
@@ -178,37 +188,47 @@ nav .burger-menu{
 .hero__buttons span{
     font-size: 1rem;
 }
-.hero__buttons a{
+.hero__buttons a {
     color: #000;
+    transition-duration: .3s;; /* Apply the transition to all properties */
+
+    &:first-child {
+        background: orange;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        filter: drop-shadow(5px 5px 5px black);
+    }
+
+    &:first-child:hover {
+        transform: scale(1.1);
+    }
+
+    &:nth-child(2) {
+        border: 2px solid orange;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        filter: drop-shadow(5px 5px 5px black);
+    }
+
+    &:nth-child(2):hover {
+        transform: scale(1.1);
+    }
+
+    [data-theme='dark'] & {
+        &:nth-child(2) {
+            color: var(--ptag-color);
+        }
+    }
 }
-.hero__buttons a:first-child{
-    background: orange;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: .3s ease-in;
-    display: flex;
-    align-items: center;
-    filter: drop-shadow(5px 5px 5px black);
-}
-.hero__buttons a:first-child:hover{
-    transform: scale(1.1);
-}
-.hero__buttons a:nth-child(2){
-    border: 2px solid orange;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: .3s ease-in;
-    border-radius: 10px;
-    filter: drop-shadow(5px 5px 5px black);
 
 
-}
-.hero__buttons a:nth-child(2):hover{
-    transform: scale(1.1);
 
-}
+
 .hero__social-links{
     display: flex;
     flex-direction: column;
@@ -324,13 +344,20 @@ nav .burger-menu{
     color: transparent;
     margin-bottom: 10px;
 }
+
+[data-theme='dark'] .about__section .container .about__data h2{
+    background: var(--h1-dark-color); 
+  background-clip: text;
+  color: transparent;
+
+}
 .about__section .container .about__data h3{
     color: orange;
     margin-bottom: 10px;
 }
 .about__section .container .about__data p{
     text-wrap: balance;
-    color: rgb(104, 103, 103);
+    color: var(--ptag-color);
 
 }
 
@@ -339,6 +366,13 @@ nav .burger-menu{
 }
 .about__section .container .about__data .certifications{
     margin-top: 20px;
+}
+.about__section .container .about__data .certifications ul li a{
+    text-decoration: underline;
+    color: #6009b8;
+}
+[data-theme='dark'] .about__section .container .about__data .certifications ul li a {
+    color: #B980F0; /* Light gray for dark mode */
 }
 .about__section .container .about__data .experience{
     margin-top: 20px;
@@ -385,6 +419,12 @@ nav .burger-menu{
 
 }
 
+[data-theme='dark'] .testimonial__section .container h1{
+    background: var(--h1-dark-color); 
+  background-clip: text;
+  color: transparent;
+
+}
 
 .testimonial__section .card {
     max-width: 100%;

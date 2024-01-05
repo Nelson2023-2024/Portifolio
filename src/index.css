@@ -1,20 +1,43 @@
 
   /* OSWALD */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;500;600;700&family=Titan+One&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;500;600;700&family=Titan+One&display=swap');
+
+:root{
+     --h1-dark-color: linear-gradient(120deg, #fff, blue);
+}
+
+[data-theme='light'] {
+  --body_background: #eee;
+  --navatag-color: #000;
+  --ptag-color: rgb(104, 103, 103);
+  --border-color:#000;
+}
+
+[data-theme='dark'] {
+  --body_background: #282c34;
+  --navatag-color: #fff;
+  --ptag-color: rgb(212, 208, 208);
+  --border-color:rgb(212, 208, 208);
+  --color:#fff;
+}
+*{
     margin: 0;
     padding: 0;
     border-radius: border-box;
 font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
+    transition:  .5s background;
 }
 
 a{
     text-decoration: none;
+    
 }
 h1{
     font-size: 2rem;
     font-family: 'Titan One', sans-serif;
 }
+
 h2{
     font-size: 1.5rem;
     font-family: 'Titan One', sans-serif;
@@ -25,6 +48,6 @@ h2{
     margin: auto;
 }
 body{
-    background: #eee;
+    background: var(--body_background);
 }
 

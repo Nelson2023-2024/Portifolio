@@ -8,6 +8,9 @@ import '../Pages/Home/home.css'
 //icons
 import { FaBars, FaTimes } from 'react-icons/fa';
 
+//file imports
+import DarkMode from './DarkMode/DarkMode';
+
 
 function Navbar() {
 
@@ -68,6 +71,7 @@ function Navbar() {
     <>
     <nav>
         <div className="container">
+          
         <div className="brand">
             <Link to='/' > Nelson</Link>
         </div>
@@ -77,6 +81,8 @@ function Navbar() {
             showLinks ? <FaTimes/>:<FaBars/>
           }
         </button>
+        
+
         <div className={`links ${showLinks ? 'show' : ''}`}>
            {
             navLists.map(({id, title, path, idjs})=>(
@@ -88,6 +94,7 @@ function Navbar() {
             ))
            }
         </div>
+        <DarkMode/>
         </div>
     </nav>
     

@@ -17,12 +17,20 @@
     color: transparent;
     font-size: 3rem;
 }
+[data-theme='dark'] .contact-main-text h1{
+  background: var(--h1-dark-color); 
+  background-clip: text;
+  color: transparent;
+}
 .contact-main-text p{
     font-size: 16px;
     color: rgb(104, 103, 103);
     margin-top: 15px;
     margin-bottom: 31px;
 
+}
+[data-theme='dark'] .contact-main-text p{
+  color: var(--ptag-color);
 }
 .contact-main-text a{
     color: rgb(104, 103, 103);
@@ -31,6 +39,9 @@
     position: relative;
     box-shadow: 5px 5px 10px black;
 
+}
+[data-theme='dark'] .contact-main-text a{
+  color: var(--ptag-color);
 }
 .contact-main-text a:before{
     content:'';
@@ -70,6 +81,12 @@
     color: transparent;
     margin-bottom: 1rem;
 }
+[data-theme='dark'] .contact__form h1{
+  background: var(--h1-dark-color); 
+  background-clip: text;
+  color: transparent;
+}
+
 .contact__form .form-control{
     width: 100%;
     max-width: 100%;
@@ -92,7 +109,7 @@
 }
 .contact__form .form-control input:focus {
   outline: none;
-  box-shadow: 0 0 10px royalblue; /* Adjust the color and intensity as needed */
+  box-shadow: 0 0 10px royalblue; 
 }
 
 .contact__form .form-control textarea{
@@ -128,6 +145,11 @@
     background-clip: text;
     color: transparent;
 }
+[data-theme='dark'] .contact__section .container .social__links h4{
+  background: var(--h1-dark-color); 
+  background-clip: text;
+  color: transparent;
+}
 .contact__section .container .social__links h6{
     color: orange;
 }
@@ -135,7 +157,7 @@
 .contact__section .container .social__links .card__link{
     width: 400px;
     max-width: 250px;
-    border: 1px solid;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     height: 50px;
     text-align: center;
@@ -155,7 +177,11 @@
     justify-content: center;
     gap: 1rem;
     transition: .5s ease-in-out;
+    
 
+}
+[data-theme='dark'] .contact__section .container .social__links .card__link a {
+    color: #B980F0; 
 }
 
 

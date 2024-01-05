@@ -11,6 +11,11 @@
     background-clip: text;
     color: transparent;
 }
+[data-theme='dark'] .project__section h1{
+  background: var(--h1-dark-color); 
+  background-clip: text;
+  color: transparent;
+}
 .project__section .container {
     max-width: 1200px;
     display: grid;
@@ -22,7 +27,7 @@
     border-radius: 10px;
     height: 350px;
     padding: 1.1rem;
-    border: 1px solid;
+    border: 1px solid var(--border-color);
     box-shadow: 5px 5px 10px  black;
     transition: .5s ease-in-out;
     
@@ -36,6 +41,11 @@
     background: linear-gradient(blue, purple);
     background-clip: text;
     color: transparent;
+}
+[data-theme='dark'] .project__section .container h2{
+  background: var(--h1-dark-color); 
+  background-clip: text;
+  color: transparent;
 }
 .project__section .container h4{
     color: orange;
@@ -53,14 +63,14 @@
     margin-top: 20px;
 }
 .projects__buttons a{
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 10px 15px;
     display: flex;
     align-items: center;
     gap: 5px;
     border-radius: 4rem;
     transition: .5s ease;
-    color: black;
+    color: var(--ptag-color);
 }
 .projects__buttons a:hover{
  transform: scale(1.1);
