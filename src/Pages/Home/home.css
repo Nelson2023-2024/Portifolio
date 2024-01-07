@@ -27,6 +27,12 @@ nav .container{
      font-size: 2rem;
     font-family: 'Titan One', sans-serif;
 }
+[data-theme='dark'] .brand a{
+    background: var(--h1-dark-color); 
+  background-clip: text;
+  color: transparent;
+
+}
 
 nav .links{
     display: flex;
@@ -245,21 +251,46 @@ nav .burger-menu{
     filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.3));
 
 }
-.hero__social-links a:nth-of-type(1):hover svg {
+/* WhatsApp icon color and hover */
+.hero__social-links a:nth-of-type(1) svg {
   color: green;
+  transition: color 0.3s ease-in-out;
+}
+
+.hero__social-links a:nth-of-type(1):hover svg {
+  color: limegreen;
+}
+
+/* LinkedIn icon color and hover */
+.hero__social-links a:nth-of-type(2) svg {
+  color: royalblue;
+  transition: color 0.3s ease-in-out;
 }
 
 .hero__social-links a:nth-of-type(2):hover svg {
-  color: royalblue;
+  color: dodgerblue;
+}
+
+/* Email icon color and hover */
+.hero__social-links a:nth-of-type(3) svg {
+  color: rgb(151, 103, 170);
+  transition: color 0.3s ease-in-out;
 }
 
 .hero__social-links a:nth-of-type(3):hover svg {
-  color: rgb(151, 103, 170);
+  color: rgb(191, 143, 210);
+}
+
+/* GitHub icon color and hover */
+.hero__social-links a:nth-of-type(4) svg {
+  color: brown;
+  transition: color 0.3s ease-in-out;
 }
 
 .hero__social-links a:nth-of-type(4):hover svg {
-  color:brown;
+  color: saddlebrown;
 }
+
 
 .tech__stack{
     display: flex;

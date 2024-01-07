@@ -48,6 +48,7 @@ function Hero() {
          <Link to={'/contact'} data-aos-duration="300" data-aos="fade-left">Contact me</Link>
           
         </div>
+        
         <div className="hero__social-links" data-aos="fade-left">
          <a href="https://wa.me/254115720771" target="_blank" rel="noopener noreferrer"><MdWhatsapp /></a>
           <a href="https://www.linkedin.com/in/nelson-obuya-841251273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
@@ -55,12 +56,9 @@ function Hero() {
                 <MdEmail /> 
               </a>
           <a href="https://github.com/Nelson2023-2024" rel="noopener noreferrer"><FaGithub /></a>
-          
-          
-          
-          
 
         </div>
+
         <div className="tech__stack"  >
 
           <h2>Techstack |</h2>
