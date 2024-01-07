@@ -1,28 +1,43 @@
-Portfolio: My Awesome React + Vite Project
-Overview
-This project serves as a portfolio to showcase my skills in React and Vite. It incorporates various features and techniques to create a stylish and responsive web application.
-Portfolio Features
-Overview
+# Portfolio: My Awesome React + Vite Project
+
+## Overview
+This project serves as a portfolio showcasing skills in React and Vite. It incorporates various features to create a stylish, responsive web application.
+
+## Portfolio Features
+### Overview
 This portfolio demonstrates a variety of functionalities and design implementations using React and Vite.
 
-Implemented Features
-React Router: Utilized React Router for seamless navigation and component rendering based on URLs.
-Array.map Method: Employed the .map method for efficient rendering of dynamic lists of components or elements.
-Dark Mode and Light Mode Themes: Implemented toggleable themes for enhanced user experience.
-Desktop-First Approach: Adopted a desktop-first approach while ensuring responsiveness across various screen sizes.
-AOS Animations: Incorporated AOS (Animate on Scroll) library for engaging and smooth scroll animations.
-React Icons: Utilized React Icons library to seamlessly include various icons.
-Slider Carousel: Integrated a slider carousel for interactive content presentation.
-Responsive Design: Ensured responsiveness using media queries and responsive components.
-React Mailer: Introduced React Mailer for email-related functionalities within the application.
+ 
+### <span style="color:blue; font-size:larger;">Implemented Features</span>
 
-Technologies Used
-React
-Vite
-React Router
-AOS
-React Icons
-React Mailer
-Other relevant technologies
-Acknowledgments
+- React
+- Vite
+- React Router
+- AOS
+- React Icons
+- React Mailer
+- Other relevant technologies
+
+- **React Router:** Enables seamless navigation and component rendering based on URLs.
+- **Array.map Method:** Renders dynamic lists of components efficiently using `.map`.
+- **Dark Mode and Light Mode Themes:** Enhances user experience with toggleable themes.
+- **Desktop-First Approach:** Ensures responsiveness across different screen sizes.
+- **AOS Animations:** Engaging scroll animations via AOS (Animate on Scroll) library.
+- **React Icons:** Seamlessly integrates various icons using React Icons library.
+- **Slider Carousel:** Presents interactive content through a slider carousel.
+- **Responsive Design:** Ensures adaptability with media queries and responsive components.
+- **React Mailer:** Adds email-related functionalities within the application.
+
+## <span style="color:blue; font-size:larger;">Technologies Used</span>
+
+- React + vite
+- React Router
+- AOS
+- React Icons
+- React Mailer
+- Other relevant technologies
+
+
+
+## Acknowledgments
 This project was independently developed by Nelson Ouya.
