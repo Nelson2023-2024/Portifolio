@@ -15,6 +15,7 @@ import { FaBootstrap } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { MdEmail } from 'react-icons/md';
+import { SiPhp } from "react-icons/si";
 
 
 import { Link } from 'react-router-dom';
@@ -69,6 +70,8 @@ function Hero() {
           <SiTailwindcss />
           <FaReact />
           <FaGithub/>
+          <SiPhp />
+
         </div>
       </div>
     </section>

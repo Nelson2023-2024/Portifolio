@@ -330,6 +330,13 @@ nav .burger-menu{
 .tech__stack svg:nth-child(7) {
   color: #61dbfb; 
 }
+.tech__stack svg:nth-child(8) {
+    color:brown; 
+  }
+.tech__stack svg:nth-child(9) {
+    color: #4F5B93; 
+  }
+  
 
 
 @media (max-width:768px){
