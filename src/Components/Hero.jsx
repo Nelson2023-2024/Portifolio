@@ -43,7 +43,7 @@ function Hero() {
           <h5 data-aos="fade-down"> <span>&hearts;</span>Welcome to my portfolio</h5>
           <h1 data-aos="fade-down">Hello, Im Nelson</h1>
           <h3 data-aos="fade-down">Frontend Developer</h3>
-          <p data-aos="fade-down">Hello I'm Nelson Ouya 19 years old passionate frontend developer based in Nairobi, Kenya.</p>
+          <p data-aos="fade-down">Hello I'm Nelson Ouya 20 years old passionate frontend developer based in Nairobi, Kenya.</p>
         <div className="hero__buttons">
           <a onClick={() =>{downloadFileAtURL(PDF_FILE_URL)} } data-aos-duration="300" data-aos="fade-right">Download CV <span><MdDownload /></span></a>
          <Link to={'/contact'} data-aos-duration="300" data-aos="fade-left">Contact me</Link>
