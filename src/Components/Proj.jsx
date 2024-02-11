@@ -1,5 +1,12 @@
 import '../Pages/Projects/projects.css'
 
+//Project images
+import Bugger from '../assets/Bugger.jpg';
+import Ebooks from '../assets/Ebooks.jpg';
+import GYM from '../assets/GYM.jpg';
+import Pizaa from '../assets/Pizza.jpg';
+import WebDX from '../assets/WebDx.jpg';
+
 
 //icon\
 import { FaGithub } from "react-icons/fa6";
@@ -9,7 +16,7 @@ const projects = [
 
       {
         id:1,
-        img:"https://drive.google.com/uc?id=1cEzgmM4XnVa2Aejaaf-xhEf2VXEz9-rl",
+        img:GYM,
         name:"GYM Website",
         tech:"REACT + CSS ",
         live:"https://gym254.netlify.app/",
@@ -17,7 +24,7 @@ const projects = [
     },
       {
         id:2,
-        img:"https://drive.google.com/uc?id=1sFASzGhXDB_rsfzZyqavywHkDUPpmGZ7",
+        img:Bugger,
         name:"Bugger Website",
         tech:"REACT + TAILWIND ",
         live:"https://bugger254.netlify.app/",
@@ -25,7 +32,7 @@ const projects = [
     },
     {
         id:3,
-        img:"https://drive.google.com/uc?id=1WdwzTvPBoOW5JxKYW3SCMuvKrZyf7xmC",
+        img:WebDX,
         name:"WebDX",
         tech:"HTML + CSS + JS",
         live:"https://nelson2023-2024.github.io/webDx.github.io/",
@@ -33,7 +40,7 @@ const projects = [
     },
     {
         id:4,
-        img:"https://drive.google.com/uc?id=1J4XeGGuwAb15jxvRuiMpUutMIPlbHDd_",
+        img:Pizaa,
         name:"Pizza Website",
         tech:"HTML + CSS + JS",
         live:"https://nelson2023-2024.github.io/Pizza-Website/",
@@ -41,7 +48,7 @@ const projects = [
     },
     {
         id:5,
-        img:"https://drive.google.com/uc?id=1usoTPqSFcjKwpqjMZ95cEO_61aXu1ZTh",
+        img:Ebooks,
         name:"Ebook Website",
         tech:"HTML + CSS + JS",
         live:"https://nelson2023-2024.github.io/Swipper-js-Project/",
