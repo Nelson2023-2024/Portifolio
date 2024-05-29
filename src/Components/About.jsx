@@ -20,7 +20,7 @@ function About() {
             <ul>
               <li><p><strong>Univeristy :</strong>  St Pauls University Limuru</p></li>
               <li><p><strong>Course :</strong> Bachelors in Computer Science</p></li>
-              <li><p><strong>Year : </strong>2.2(Sophmore)</p></li>  
+              <li><p><strong>Year : </strong>3.1( Junior )</p></li>  
             </ul>
           </div>
           <div className="certifications">
