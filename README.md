@@ -1,7 +1,11 @@
-# Portfolio: My Awesome React + Vite Project
+# Portfolio: [Portfolio Link](https://nelsonsportifolio.netlify.app)
+
 
 ## Overview
 This project serves as a portfolio showcasing skills in React and Vite. It incorporates various features to create a stylish, responsive web application.
+
+![Preview](C:\Users\BATMAN\Desktop\CODE\REACT\Portifolio\src\assets\Preview.png)
+
 
 ## Portfolio Features
 ### Overview
@@ -26,6 +30,7 @@ This portfolio demonstrates a variety of functionalities and design implementati
 - React Icons
 - React Mailer
 - Other relevant technologies
+
 
 ## Acknowledgments
 This project was independently developed by Nelson Ouya.
