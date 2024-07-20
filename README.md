@@ -4,7 +4,7 @@
 ## Overview
 This project serves as a portfolio showcasing skills in React and Vite. It incorporates various features to create a stylish, responsive web application.
 
-![Preview](C:\Users\BATMAN\Desktop\CODE\REACT\Portifolio\src\assets\Preview.png)
+![Preview](./src/assets/Preview.png)
 
 
 ## Portfolio Features
