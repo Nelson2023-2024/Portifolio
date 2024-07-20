@@ -15,7 +15,7 @@ function PrimaryLanding() {
         </div>
         </section>
     </>
-  )
+  ) 
 }
 
 export default PrimaryLanding

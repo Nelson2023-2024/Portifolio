@@ -15,7 +15,7 @@
   background: var(--h1-dark-color); 
   background-clip: text;
   color: transparent;
-}
+} 
 .project__section .container {
     max-width: 1200px;
     display: grid;

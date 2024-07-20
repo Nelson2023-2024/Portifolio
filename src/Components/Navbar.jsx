@@ -66,7 +66,7 @@ function Navbar() {
   const toggleLinks = () => {
     setShowLinks(prevshow => !prevshow)
   }
- 
+  
   return (
     <>
     <nav>

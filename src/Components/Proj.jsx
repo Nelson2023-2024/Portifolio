@@ -60,7 +60,7 @@ const projects = [
 
 function Proj() {
   return (
-    <>
+    <> 
     <section className="project__section">
         <h1 data-aos="fade-up">Projects</h1>
         <div className="container">

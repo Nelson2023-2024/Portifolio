@@ -47,7 +47,7 @@ function Hero() {
         <div className="hero__buttons">
           <a onClick={() =>{downloadFileAtURL(PDF_FILE_URL)} } data-aos-duration="300" data-aos="fade-right">Download CV <span><MdDownload /></span></a>
          <Link to={'/contact'} data-aos-duration="300" data-aos="fade-left">Contact me</Link>
-          
+           
         </div>
         
         <div className="hero__social-links" data-aos="fade-left">

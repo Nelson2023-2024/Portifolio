@@ -7,6 +7,6 @@ function Button({text, btnStyles, icon, iconStyles}) {
         <span style={iconStyles}>{icon}</span>
     </button>
   )
-}
+} 
 
 export default Button

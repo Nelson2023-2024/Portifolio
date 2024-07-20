@@ -33,7 +33,7 @@ function ContactForm() {
   };
 
   return (
-    <>
+    <> 
       <section className="contact__section" id="contact">
         <div className="container">
           {/* Social icons */}

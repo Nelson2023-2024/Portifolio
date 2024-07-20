@@ -14,7 +14,7 @@ const sliderSettings ={
   mobileFirst:true,
   autoplaySpeed:3000,
   pauseOnHover:true,
-}
+} 
   
 
 
