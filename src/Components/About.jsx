@@ -52,6 +52,15 @@ function About() {
             <div className="certifications">
               <h3>Certifications</h3>
               <ul>
+              <li>
+                  <a
+                    href="https://www.freecodecamp.org/certification/Nelson254/back-end-development-and-apis"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Backend Development and API's
+                  </a>
+                </li>
                 <li>
                   <a
                     href="https://www.freecodecamp.org/certification/Nelson254/responsive-web-design"
@@ -68,7 +77,7 @@ function About() {
               <h3>Experience</h3>
               <ul>
                 <li>
-                  <p>6 Months +</p>
+                  <p>3 Months +</p>
                 </li>
                 <li>
                   <p>Freelance work</p>
