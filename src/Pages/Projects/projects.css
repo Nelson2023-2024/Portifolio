@@ -20,12 +20,12 @@
     max-width: 1200px;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     color: black;
 }
 .project__section .container .projects__card{
     border-radius: 10px;
-    height: 350px;
+    min-height: 350px;
     padding: 1.1rem;
     border: 1px solid var(--border-color);
     box-shadow: 5px 5px 10px  black;
@@ -81,34 +81,4 @@
 }
 .projects__buttons a .github{
     color: black;
-}
-@media (max-width:1024px){
-    .project__section .container {
-   
-    grid-template-columns: repeat(2, 1fr);
-}
-    
-}
-@media (max-width:768px){
-    .project__section .container {
-    grid-template-columns: repeat(1, 450px);
-    justify-content: center;
-}
-   .project__section .container img{
-    width: 100%;
-    height: 200px;
-}
-}
-
-@media (max-width:530px){
-    .project__section .container {
-    grid-template-columns: repeat(1, 350px);
-}
-  
-}
-@media (max-width:375px){
-    .project__section .container {
-    grid-template-columns: repeat(1, 320px);
-}
-  
 }
